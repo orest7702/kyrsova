@@ -1,0 +1,79 @@
+@media (max-width: 375px) {
+
+    .conveir {
+        background-color: #6f9e7f;
+    }
+
+    .slider-window {
+        width: 100%;
+        padding: 15px 5px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slider-track {
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+        gap: 20px;
+        transition: transform 0.5s ease-in-out; 
+    }
+    .slider-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.3);
+        color: white;
+        border: none;
+        font-size: 24px;
+        padding: 15px 10px;
+        cursor: pointer;
+        z-index: 10; /* Вище за картки */
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+    .slider-btn:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .cards {
+        flex-direction: column;
+        width: 200px;
+        height: 350px;
+        display: flex;
+        background-color: #dce4df;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    .photo {
+        margin: 10px;
+        width: 180px;
+        border-radius: 5px;
+    }
+    .photo img {
+        width: 100%;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .text {
+        text-align: center;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    .text a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    footer div {
+        font-size: 16px;
+        color: #f7f6f6;
+    }
+
+}

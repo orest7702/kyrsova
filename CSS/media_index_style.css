@@ -1,0 +1,118 @@
+@media (max-width: 375px) {
+    
+    main section {
+        scroll-margin-top: 100px;
+        transition: 100ms;
+        border-radius: 4px;
+        background-color: #80b69f;
+        padding: 5px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    main img {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .table {
+        width: 100%;
+        overflow-x: auto;
+        margin-bottom: 20px;
+        border-radius: 8px;
+    }
+
+    .smart-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #c1d3c5;
+        box-shadow: 0 5px 15px rgba(1,0,0,0.2);
+        overflow: hidden;
+    }
+
+    .smart-table thead {
+        background-color: #67d5df;
+        color: rgb(40, 104, 49);
+    }
+
+    .smart-table th, .smart-table td {
+        padding: 15px 20px;
+        text-align: left;
+        border-bottom: 1px solid #6a5858;
+    }
+
+    .smart-table th {
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .feature {
+        font-weight: bold;
+        color: #14314e;
+        background-color: #49734f;
+        width: 20%;
+    }
+
+    .yes {
+        background-color: rgba(0, 255, 106, 0.05);
+        width: 40%;
+    }
+
+    .no {
+        background-color: rgba(255, 21, 0, 0.05); 
+        width: 40%;
+    }
+
+    .smart-table tr:hover {
+        background-color: #d4d2d2;
+        transition: 0.3s;
+    }
+
+    .block {
+        font-size: 14px;
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 0 0px 10px rgb(244, 242, 242);
+        transition: transform 0.3s , box-shadow 0.3s ;
+    }
+    
+    .block:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .company {
+        font-size: 14px;
+        margin-bottom: 15px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        padding: 10px;
+        background: #a5c4ad;
+        box-shadow: 0 0px 10px rgb(244, 242, 242);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .company:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+
+    .company h3 {
+        margin-top: 0;
+        color: #0460c2;
+        font-size: 14px;
+    }
+
+    .company ul {
+        padding-left: 10px;
+        list-style-type: none;
+        font-size: 12px;
+    }
+
+    footer div {
+        font-size: 16px;
+        color: #ffffff;
+    }
+}

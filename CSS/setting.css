@@ -1,0 +1,128 @@
+@media (min-width: 376px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        display: grid;
+        background-color: #a9c5b0;
+        gap: 10px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows:
+        auto    
+        auto     
+        auto
+        auto;   
+        grid-template-areas:
+            "header header header header header header"
+            ". nav nav nav nav ."
+            ". article main main main ."
+            "footer footer footer footer footer footer";
+    }
+
+    header {
+        grid-area: header;
+        border-radius: 5px;
+        background-color: #333;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+
+    }
+
+    header h2 {
+        margin-left: 100px;
+        margin-right: auto;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+    } 
+
+    header img {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+    }
+
+    nav {
+        grid-area: nav;
+        z-index: 100;
+        display: flex;
+        background-color: #333;
+        position: sticky;
+        align-items: center;
+        top: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    nav a {
+        text-decoration: none;
+        background: #98b9a0;
+        color: #333;
+        font-size: 18px;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 5px;
+        transition: 0.6s ease;
+        flex: 1;
+        text-align: center;
+    }
+
+    nav a:hover {
+        background-color: #3f0101;
+        color: #98b9a0;
+        border-radius: 12px;
+        transition: 400ms;
+    }
+
+    nav a.active {
+        box-shadow: 0 4px 6px rgba(92, 222, 146, 0.6);
+    }
+
+    article {
+        grid-area: article;
+    }
+
+    .block-menu {
+        position: sticky;
+        border-radius: 5px;
+        background-color: #78aa74;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        z-index: 100;
+    }
+
+    .menu-toggle {
+        width: 100%;
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        padding: 5px;
+        display: flex;
+    }
+
+    main {
+        min-width: 0;
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        grid-area: footer;
+        border-radius: 5px;
+        background-color: #333;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        position: sticky;
+        bottom: 10px;
+    }
+
+
+}
